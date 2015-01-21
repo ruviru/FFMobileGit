@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:ffmobile.xaml;assembly=ffmobile"
+					   x:Class="ffmobile.xaml.tblLeadsDetailPage"
+             Padding="20"
+			 Title="tblLeads Item">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <c:NullableConverter x:Key="nullConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+	  
+        <Label Text="ID:" Grid.Row="0" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding ID, Converter={StaticResource nullConverter} }" x:Name="ID_column" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" />
+	  
+        <Label Text="SubscriberId:" Grid.Row="1" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding SubscriberId, Converter={StaticResource nullConverter} }" x:Name="SubscriberId_column" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" />
+	  
+        <Label Text="AnnualShipments:" Grid.Row="2" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding AnnualShipments, Converter={StaticResource nullConverter} }" x:Name="AnnualShipments_column" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1" />
+	  
+        <Label Text="AnnualVolumes:" Grid.Row="3" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding AnnualVolumes, Converter={StaticResource nullConverter} }" x:Name="AnnualVolumes_column" HorizontalOptions="FillAndExpand" Grid.Row="3" Grid.Column="1" />
+	  
+        <Label Text="AssignedDate:" Grid.Row="4" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding AssignedDate, Converter={StaticResource nullConverter} }" x:Name="AssignedDate_column" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.Column="1" />
+	  
+        <Label Text="AssignedSalesRepCode:" Grid.Row="5" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding AssignedSalesRepCode, Converter={StaticResource nullConverter} }" x:Name="AssignedSalesRepCode_column" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="1" />
+	  
+        <Label Text="CampaignName:" Grid.Row="6" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CampaignName, Converter={StaticResource nullConverter} }" x:Name="CampaignName_column" HorizontalOptions="FillAndExpand" Grid.Row="6" Grid.Column="1" />
+	  
+        <Label Text="Comments:" Grid.Row="7" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Comments, Converter={StaticResource nullConverter} }" x:Name="Comments_column" HorizontalOptions="FillAndExpand" Grid.Row="7" Grid.Column="1" />
+	  
+        <Label Text="Commodities:" Grid.Row="8" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Commodities, Converter={StaticResource nullConverter} }" x:Name="Commodities_column" HorizontalOptions="FillAndExpand" Grid.Row="8" Grid.Column="1" />
+	  
+        <Label Text="Competitors:" Grid.Row="9" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Competitors, Converter={StaticResource nullConverter} }" x:Name="Competitors_column" HorizontalOptions="FillAndExpand" Grid.Row="9" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeAddress:" Grid.Row="10" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeAddress, Converter={StaticResource nullConverter} }" x:Name="ConsigneeAddress_column" HorizontalOptions="FillAndExpand" Grid.Row="10" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeCity:" Grid.Row="11" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeCity, Converter={StaticResource nullConverter} }" x:Name="ConsigneeCity_column" HorizontalOptions="FillAndExpand" Grid.Row="11" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeCompany:" Grid.Row="12" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeCompany, Converter={StaticResource nullConverter} }" x:Name="ConsigneeCompany_column" HorizontalOptions="FillAndExpand" Grid.Row="12" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeContact:" Grid.Row="13" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeContact, Converter={StaticResource nullConverter} }" x:Name="ConsigneeContact_column" HorizontalOptions="FillAndExpand" Grid.Row="13" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeContactSalutation:" Grid.Row="14" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeContactSalutation, Converter={StaticResource nullConverter} }" x:Name="ConsigneeContactSalutation_column" HorizontalOptions="FillAndExpand" Grid.Row="14" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeContactTitle:" Grid.Row="15" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeContactTitle, Converter={StaticResource nullConverter} }" x:Name="ConsigneeContactTitle_column" HorizontalOptions="FillAndExpand" Grid.Row="15" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeCountryCode:" Grid.Row="16" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeCountryCode, Converter={StaticResource nullConverter} }" x:Name="ConsigneeCountryCode_column" HorizontalOptions="FillAndExpand" Grid.Row="16" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeCountryName:" Grid.Row="17" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeCountryName, Converter={StaticResource nullConverter} }" x:Name="ConsigneeCountryName_column" HorizontalOptions="FillAndExpand" Grid.Row="17" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeEmail:" Grid.Row="18" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeEmail, Converter={StaticResource nullConverter} }" x:Name="ConsigneeEmail_column" HorizontalOptions="FillAndExpand" Grid.Row="18" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeFax:" Grid.Row="19" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeFax, Converter={StaticResource nullConverter} }" x:Name="ConsigneeFax_column" HorizontalOptions="FillAndExpand" Grid.Row="19" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeMobile:" Grid.Row="20" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeMobile, Converter={StaticResource nullConverter} }" x:Name="ConsigneeMobile_column" HorizontalOptions="FillAndExpand" Grid.Row="20" Grid.Column="1" />
+	  
+        <Label Text="ConsigneePhone:" Grid.Row="21" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneePhone, Converter={StaticResource nullConverter} }" x:Name="ConsigneePhone_column" HorizontalOptions="FillAndExpand" Grid.Row="21" Grid.Column="1" />
+	  
+        <Label Text="ConsigneePostalCode:" Grid.Row="22" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneePostalCode, Converter={StaticResource nullConverter} }" x:Name="ConsigneePostalCode_column" HorizontalOptions="FillAndExpand" Grid.Row="22" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeStateProvince:" Grid.Row="23" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeStateProvince, Converter={StaticResource nullConverter} }" x:Name="ConsigneeStateProvince_column" HorizontalOptions="FillAndExpand" Grid.Row="23" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeWebsite:" Grid.Row="24" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeWebsite, Converter={StaticResource nullConverter} }" x:Name="ConsigneeWebsite_column" HorizontalOptions="FillAndExpand" Grid.Row="24" Grid.Column="1" />
+	  
+        <Label Text="ConvertedDate:" Grid.Row="25" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConvertedDate, Converter={StaticResource nullConverter} }" x:Name="ConvertedDate_column" HorizontalOptions="FillAndExpand" Grid.Row="25" Grid.Column="1" />
+	  
+        <Label Text="ConvertedById:" Grid.Row="26" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding ConvertedById, Converter={StaticResource nullConverter} }" x:Name="ConvertedById_column" HorizontalOptions="FillAndExpand" Grid.Row="26" Grid.Column="1" />
+	  
+        <Label Text="ConvertedByName:" Grid.Row="27" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConvertedByName, Converter={StaticResource nullConverter} }" x:Name="ConvertedByName_column" HorizontalOptions="FillAndExpand" Grid.Row="27" Grid.Column="1" />
+	  
+        <Label Text="CreatedById:" Grid.Row="28" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding CreatedById, Converter={StaticResource nullConverter} }" x:Name="CreatedById_column" HorizontalOptions="FillAndExpand" Grid.Row="28" Grid.Column="1" />
+	  
+        <Label Text="CreatedDate:" Grid.Row="29" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CreatedDate, Converter={StaticResource nullConverter} }" x:Name="CreatedDate_column" HorizontalOptions="FillAndExpand" Grid.Row="29" Grid.Column="1" />
+	  
+        <Label Text="CreatedUserName:" Grid.Row="30" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CreatedUserName, Converter={StaticResource nullConverter} }" x:Name="CreatedUserName_column" HorizontalOptions="FillAndExpand" Grid.Row="30" Grid.Column="1" />
+	  
+        <Label Text="CustomerType:" Grid.Row="31" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CustomerType, Converter={StaticResource nullConverter} }" x:Name="CustomerType_column" HorizontalOptions="FillAndExpand" Grid.Row="31" Grid.Column="1" />
+	  
+        <Label Text="DateDeleted:" Grid.Row="32" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding DateDeleted, Converter={StaticResource nullConverter} }" x:Name="DateDeleted_column" HorizontalOptions="FillAndExpand" Grid.Row="32" Grid.Column="1" />
+	  
+        <Label Text="DateLost:" Grid.Row="33" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding DateLost, Converter={StaticResource nullConverter} }" x:Name="DateLost_column" HorizontalOptions="FillAndExpand" Grid.Row="33" Grid.Column="1" />
+	  
+        <Label Text="Deleted:" Grid.Row="34" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Switch IsToggled="{Binding Deleted, Converter={StaticResource nullConverter} }" x:Name="Deleted_column" HorizontalOptions="EndAndExpand" Grid.Row="34" Grid.Column="1" />
+	  
+        <Label Text="DeletedById:" Grid.Row="35" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding DeletedById, Converter={StaticResource nullConverter} }" x:Name="DeletedById_column" HorizontalOptions="FillAndExpand" Grid.Row="35" Grid.Column="1" />
+	  
+        <Label Text="Destinations:" Grid.Row="36" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Destinations, Converter={StaticResource nullConverter} }" x:Name="Destinations_column" HorizontalOptions="FillAndExpand" Grid.Row="36" Grid.Column="1" />
+	  
+        <Label Text="Direction:" Grid.Row="37" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Direction, Converter={StaticResource nullConverter} }" x:Name="Direction_column" HorizontalOptions="FillAndExpand" Grid.Row="37" Grid.Column="1" />
+	  
+        <Label Text="FileUploadId:" Grid.Row="38" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding FileUploadId, Converter={StaticResource nullConverter} }" x:Name="FileUploadId_column" HorizontalOptions="FillAndExpand" Grid.Row="38" Grid.Column="1" />
+	  
+        <Label Text="FileUploadDate:" Grid.Row="39" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding FileUploadDate, Converter={StaticResource nullConverter} }" x:Name="FileUploadDate_column" HorizontalOptions="FillAndExpand" Grid.Row="39" Grid.Column="1" />
+	  
+        <Label Text="FreightServices:" Grid.Row="40" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding FreightServices, Converter={StaticResource nullConverter} }" x:Name="FreightServices_column" HorizontalOptions="FillAndExpand" Grid.Row="40" Grid.Column="1" />
+	  
+        <Label Text="Incoterms:" Grid.Row="41" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Incoterms, Converter={StaticResource nullConverter} }" x:Name="Incoterms_column" HorizontalOptions="FillAndExpand" Grid.Row="41" Grid.Column="1" />
+	  
+        <Label Text="IndustrySector:" Grid.Row="42" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding IndustrySector, Converter={StaticResource nullConverter} }" x:Name="IndustrySector_column" HorizontalOptions="FillAndExpand" Grid.Row="42" Grid.Column="1" />
+	  
+        <Label Text="InterOffice:" Grid.Row="43" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Switch IsToggled="{Binding InterOffice, Converter={StaticResource nullConverter} }" x:Name="InterOffice_column" HorizontalOptions="EndAndExpand" Grid.Row="43" Grid.Column="1" />
+	  
+        <Label Text="LastActivityDate:" Grid.Row="44" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LastActivityDate, Converter={StaticResource nullConverter} }" x:Name="LastActivityDate_column" HorizontalOptions="FillAndExpand" Grid.Row="44" Grid.Column="1" />
+	  
+        <Label Text="LastUpdate:" Grid.Row="45" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LastUpdate, Converter={StaticResource nullConverter} }" x:Name="LastUpdate_column" HorizontalOptions="FillAndExpand" Grid.Row="45" Grid.Column="1" />
+	  
+        <Label Text="LeadAddress:" Grid.Row="46" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadAddress, Converter={StaticResource nullConverter} }" x:Name="LeadAddress_column" HorizontalOptions="FillAndExpand" Grid.Row="46" Grid.Column="1" />
+	  
+        <Label Text="LeadCity:" Grid.Row="47" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadCity, Converter={StaticResource nullConverter} }" x:Name="LeadCity_column" HorizontalOptions="FillAndExpand" Grid.Row="47" Grid.Column="1" />
+	  
+        <Label Text="LeadContact:" Grid.Row="48" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadContact, Converter={StaticResource nullConverter} }" x:Name="LeadContact_column" HorizontalOptions="FillAndExpand" Grid.Row="48" Grid.Column="1" />
+	  
+        <Label Text="LeadContactSalutation:" Grid.Row="49" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadContactSalutation, Converter={StaticResource nullConverter} }" x:Name="LeadContactSalutation_column" HorizontalOptions="FillAndExpand" Grid.Row="49" Grid.Column="1" />
+	  
+        <Label Text="LeadContactTitle:" Grid.Row="50" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadContactTitle, Converter={StaticResource nullConverter} }" x:Name="LeadContactTitle_column" HorizontalOptions="FillAndExpand" Grid.Row="50" Grid.Column="1" />
+	  
+        <Label Text="LeadCountryCode:" Grid.Row="51" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadCountryCode, Converter={StaticResource nullConverter} }" x:Name="LeadCountryCode_column" HorizontalOptions="FillAndExpand" Grid.Row="51" Grid.Column="1" />
+	  
+        <Label Text="LeadCountryName:" Grid.Row="52" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadCountryName, Converter={StaticResource nullConverter} }" x:Name="LeadCountryName_column" HorizontalOptions="FillAndExpand" Grid.Row="52" Grid.Column="1" />
+	  
+        <Label Text="LeadDateReceived:" Grid.Row="53" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadDateReceived, Converter={StaticResource nullConverter} }" x:Name="LeadDateReceived_column" HorizontalOptions="FillAndExpand" Grid.Row="53" Grid.Column="1" />
+	  
+        <Label Text="LeadEmail:" Grid.Row="54" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadEmail, Converter={StaticResource nullConverter} }" x:Name="LeadEmail_column" HorizontalOptions="FillAndExpand" Grid.Row="54" Grid.Column="1" />
+	  
+        <Label Text="LeadFax:" Grid.Row="55" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadFax, Converter={StaticResource nullConverter} }" x:Name="LeadFax_column" HorizontalOptions="FillAndExpand" Grid.Row="55" Grid.Column="1" />
+	  
+        <Label Text="LeadMobile:" Grid.Row="56" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadMobile, Converter={StaticResource nullConverter} }" x:Name="LeadMobile_column" HorizontalOptions="FillAndExpand" Grid.Row="56" Grid.Column="1" />
+	  
+        <Label Text="LeadName:" Grid.Row="57" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadName, Converter={StaticResource nullConverter} }" x:Name="LeadName_column" HorizontalOptions="FillAndExpand" Grid.Row="57" Grid.Column="1" />
+	  
+        <Label Text="LeadNumber:" Grid.Row="58" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadNumber, Converter={StaticResource nullConverter} }" x:Name="LeadNumber_column" HorizontalOptions="FillAndExpand" Grid.Row="58" Grid.Column="1" />
+	  
+        <Label Text="LeadPhone:" Grid.Row="59" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadPhone, Converter={StaticResource nullConverter} }" x:Name="LeadPhone_column" HorizontalOptions="FillAndExpand" Grid.Row="59" Grid.Column="1" />
+	  
+        <Label Text="LeadPostalCode:" Grid.Row="60" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadPostalCode, Converter={StaticResource nullConverter} }" x:Name="LeadPostalCode_column" HorizontalOptions="FillAndExpand" Grid.Row="60" Grid.Column="1" />
+	  
+        <Label Text="LeadSource:" Grid.Row="61" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadSource, Converter={StaticResource nullConverter} }" x:Name="LeadSource_column" HorizontalOptions="FillAndExpand" Grid.Row="61" Grid.Column="1" />
+	  
+        <Label Text="LeadStateProvince:" Grid.Row="62" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadStateProvince, Converter={StaticResource nullConverter} }" x:Name="LeadStateProvince_column" HorizontalOptions="FillAndExpand" Grid.Row="62" Grid.Column="1" />
+	  
+        <Label Text="LeadStatusCode:" Grid.Row="63" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadStatusCode, Converter={StaticResource nullConverter} }" x:Name="LeadStatusCode_column" HorizontalOptions="FillAndExpand" Grid.Row="63" Grid.Column="1" />
+	  
+        <Label Text="LeadWebsite:" Grid.Row="64" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadWebsite, Converter={StaticResource nullConverter} }" x:Name="LeadWebsite_column" HorizontalOptions="FillAndExpand" Grid.Row="64" Grid.Column="1" />
+	  
+        <Label Text="NextActivityDate:" Grid.Row="65" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding NextActivityDate, Converter={StaticResource nullConverter} }" x:Name="NextActivityDate_column" HorizontalOptions="FillAndExpand" Grid.Row="65" Grid.Column="1" />
+	  
+        <Label Text="OriginatingUser:" Grid.Row="66" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OriginatingUser, Converter={StaticResource nullConverter} }" x:Name="OriginatingUser_column" HorizontalOptions="FillAndExpand" Grid.Row="66" Grid.Column="1" />
+	  
+        <Label Text="OriginatingUserId:" Grid.Row="67" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding OriginatingUserId, Converter={StaticResource nullConverter} }" x:Name="OriginatingUserId_column" HorizontalOptions="FillAndExpand" Grid.Row="67" Grid.Column="1" />
+	  
+        <Label Text="Origins:" Grid.Row="68" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Origins, Converter={StaticResource nullConverter} }" x:Name="Origins_column" HorizontalOptions="FillAndExpand" Grid.Row="68" Grid.Column="1" />
+	  
+        <Label Text="OriginSystem:" Grid.Row="69" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OriginSystem, Converter={StaticResource nullConverter} }" x:Name="OriginSystem_column" HorizontalOptions="FillAndExpand" Grid.Row="69" Grid.Column="1" />
+	  
+        <Label Text="OtherAddress:" Grid.Row="70" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherAddress, Converter={StaticResource nullConverter} }" x:Name="OtherAddress_column" HorizontalOptions="FillAndExpand" Grid.Row="70" Grid.Column="1" />
+	  
+        <Label Text="OtherCity:" Grid.Row="71" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherCity, Converter={StaticResource nullConverter} }" x:Name="OtherCity_column" HorizontalOptions="FillAndExpand" Grid.Row="71" Grid.Column="1" />
+	  
+        <Label Text="OtherCompany:" Grid.Row="72" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherCompany, Converter={StaticResource nullConverter} }" x:Name="OtherCompany_column" HorizontalOptions="FillAndExpand" Grid.Row="72" Grid.Column="1" />
+	  
+        <Label Text="OtherContact:" Grid.Row="73" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherContact, Converter={StaticResource nullConverter} }" x:Name="OtherContact_column" HorizontalOptions="FillAndExpand" Grid.Row="73" Grid.Column="1" />
+	  
+        <Label Text="OtherContactSalutation:" Grid.Row="74" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherContactSalutation, Converter={StaticResource nullConverter} }" x:Name="OtherContactSalutation_column" HorizontalOptions="FillAndExpand" Grid.Row="74" Grid.Column="1" />
+	  
+        <Label Text="OtherContactTitle:" Grid.Row="75" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherContactTitle, Converter={StaticResource nullConverter} }" x:Name="OtherContactTitle_column" HorizontalOptions="FillAndExpand" Grid.Row="75" Grid.Column="1" />
+	  
+        <Label Text="OtherCountryCode:" Grid.Row="76" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherCountryCode, Converter={StaticResource nullConverter} }" x:Name="OtherCountryCode_column" HorizontalOptions="FillAndExpand" Grid.Row="76" Grid.Column="1" />
+	  
+        <Label Text="OtherCountryName:" Grid.Row="77" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherCountryName, Converter={StaticResource nullConverter} }" x:Name="OtherCountryName_column" HorizontalOptions="FillAndExpand" Grid.Row="77" Grid.Column="1" />
+	  
+        <Label Text="OtherEmail:" Grid.Row="78" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherEmail, Converter={StaticResource nullConverter} }" x:Name="OtherEmail_column" HorizontalOptions="FillAndExpand" Grid.Row="78" Grid.Column="1" />
+	  
+        <Label Text="OtherFax:" Grid.Row="79" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherFax, Converter={StaticResource nullConverter} }" x:Name="OtherFax_column" HorizontalOptions="FillAndExpand" Grid.Row="79" Grid.Column="1" />
+	  
+        <Label Text="OtherMobile:" Grid.Row="80" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherMobile, Converter={StaticResource nullConverter} }" x:Name="OtherMobile_column" HorizontalOptions="FillAndExpand" Grid.Row="80" Grid.Column="1" />
+	  
+        <Label Text="OtherPhone:" Grid.Row="81" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherPhone, Converter={StaticResource nullConverter} }" x:Name="OtherPhone_column" HorizontalOptions="FillAndExpand" Grid.Row="81" Grid.Column="1" />
+	  
+        <Label Text="OtherPostalCode:" Grid.Row="82" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherPostalCode, Converter={StaticResource nullConverter} }" x:Name="OtherPostalCode_column" HorizontalOptions="FillAndExpand" Grid.Row="82" Grid.Column="1" />
+	  
+        <Label Text="OtherStateProvince:" Grid.Row="83" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherStateProvince, Converter={StaticResource nullConverter} }" x:Name="OtherStateProvince_column" HorizontalOptions="FillAndExpand" Grid.Row="83" Grid.Column="1" />
+	  
+        <Label Text="OtherWebsite:" Grid.Row="84" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherWebsite, Converter={StaticResource nullConverter} }" x:Name="OtherWebsite_column" HorizontalOptions="FillAndExpand" Grid.Row="84" Grid.Column="1" />
+	  
+        <Label Text="PrimaryContactId:" Grid.Row="85" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding PrimaryContactId, Converter={StaticResource nullConverter} }" x:Name="PrimaryContactId_column" HorizontalOptions="FillAndExpand" Grid.Row="85" Grid.Column="1" />
+	  
+        <Label Text="ReasonLost:" Grid.Row="86" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReasonLost, Converter={StaticResource nullConverter} }" x:Name="ReasonLost_column" HorizontalOptions="FillAndExpand" Grid.Row="86" Grid.Column="1" />
+	  
+        <Label Text="ReferralDate:" Grid.Row="87" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferralDate, Converter={StaticResource nullConverter} }" x:Name="ReferralDate_column" HorizontalOptions="FillAndExpand" Grid.Row="87" Grid.Column="1" />
+	  
+        <Label Text="ReferralDueDate:" Grid.Row="88" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferralDueDate, Converter={StaticResource nullConverter} }" x:Name="ReferralDueDate_column" HorizontalOptions="FillAndExpand" Grid.Row="88" Grid.Column="1" />
+	  
+        <Label Text="ReferralResponseDate:" Grid.Row="89" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferralResponseDate, Converter={StaticResource nullConverter} }" x:Name="ReferralResponseDate_column" HorizontalOptions="FillAndExpand" Grid.Row="89" Grid.Column="1" />
+	  
+        <Label Text="ReferralType:" Grid.Row="90" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferralType, Converter={StaticResource nullConverter} }" x:Name="ReferralType_column" HorizontalOptions="FillAndExpand" Grid.Row="90" Grid.Column="1" />
+	  
+        <Label Text="ReferredBySalesRepCode:" Grid.Row="91" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredBySalesRepCode, Converter={StaticResource nullConverter} }" x:Name="ReferredBySalesRepCode_column" HorizontalOptions="FillAndExpand" Grid.Row="91" Grid.Column="1" />
+	  
+        <Label Text="ReferredByStationCode:" Grid.Row="92" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredByStationCode, Converter={StaticResource nullConverter} }" x:Name="ReferredByStationCode_column" HorizontalOptions="FillAndExpand" Grid.Row="92" Grid.Column="1" />
+	  
+        <Label Text="ReferredByStationId:" Grid.Row="93" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding ReferredByStationId, Converter={StaticResource nullConverter} }" x:Name="ReferredByStationId_column" HorizontalOptions="FillAndExpand" Grid.Row="93" Grid.Column="1" />
+	  
+        <Label Text="ReferredByStationName:" Grid.Row="94" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredByStationName, Converter={StaticResource nullConverter} }" x:Name="ReferredByStationName_column" HorizontalOptions="FillAndExpand" Grid.Row="94" Grid.Column="1" />
+	  
+        <Label Text="ReferredByUserId:" Grid.Row="95" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding ReferredByUserId, Converter={StaticResource nullConverter} }" x:Name="ReferredByUserId_column" HorizontalOptions="FillAndExpand" Grid.Row="95" Grid.Column="1" />
+	  
+        <Label Text="ReferredByUserName:" Grid.Row="96" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredByUserName, Converter={StaticResource nullConverter} }" x:Name="ReferredByUserName_column" HorizontalOptions="FillAndExpand" Grid.Row="96" Grid.Column="1" />
+	  
+        <Label Text="ReferredToEmail:" Grid.Row="97" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredToEmail, Converter={StaticResource nullConverter} }" x:Name="ReferredToEmail_column" HorizontalOptions="FillAndExpand" Grid.Row="97" Grid.Column="1" />
+	  
+        <Label Text="ReferredToSalesRepCode:" Grid.Row="98" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredToSalesRepCode, Converter={StaticResource nullConverter} }" x:Name="ReferredToSalesRepCode_column" HorizontalOptions="FillAndExpand" Grid.Row="98" Grid.Column="1" />
+	  
+        <Label Text="ReferredToStationCode:" Grid.Row="99" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredToStationCode, Converter={StaticResource nullConverter} }" x:Name="ReferredToStationCode_column" HorizontalOptions="FillAndExpand" Grid.Row="99" Grid.Column="1" />
+	  
+        <Label Text="ReferredToStationId:" Grid.Row="100" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding ReferredToStationId, Converter={StaticResource nullConverter} }" x:Name="ReferredToStationId_column" HorizontalOptions="FillAndExpand" Grid.Row="100" Grid.Column="1" />
+	  
+        <Label Text="ReferredToStationName:" Grid.Row="101" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredToStationName, Converter={StaticResource nullConverter} }" x:Name="ReferredToStationName_column" HorizontalOptions="FillAndExpand" Grid.Row="101" Grid.Column="1" />
+	  
+        <Label Text="ReferredToUserId:" Grid.Row="102" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding ReferredToUserId, Converter={StaticResource nullConverter} }" x:Name="ReferredToUserId_column" HorizontalOptions="FillAndExpand" Grid.Row="102" Grid.Column="1" />
+	  
+        <Label Text="ReferredToUserName:" Grid.Row="103" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ReferredToUserName, Converter={StaticResource nullConverter} }" x:Name="ReferredToUserName_column" HorizontalOptions="FillAndExpand" Grid.Row="103" Grid.Column="1" />
+	  
+        <Label Text="SalesGroup:" Grid.Row="104" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding SalesGroup, Converter={StaticResource nullConverter} }" x:Name="SalesGroup_column" HorizontalOptions="FillAndExpand" Grid.Row="104" Grid.Column="1" />
+	  
+        <Label Text="ShipperAddress:" Grid.Row="105" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperAddress, Converter={StaticResource nullConverter} }" x:Name="ShipperAddress_column" HorizontalOptions="FillAndExpand" Grid.Row="105" Grid.Column="1" />
+	  
+        <Label Text="ShipperCity:" Grid.Row="106" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperCity, Converter={StaticResource nullConverter} }" x:Name="ShipperCity_column" HorizontalOptions="FillAndExpand" Grid.Row="106" Grid.Column="1" />
+	  
+        <Label Text="ShipperCompany:" Grid.Row="107" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperCompany, Converter={StaticResource nullConverter} }" x:Name="ShipperCompany_column" HorizontalOptions="FillAndExpand" Grid.Row="107" Grid.Column="1" />
+	  
+        <Label Text="ShipperContact:" Grid.Row="108" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperContact, Converter={StaticResource nullConverter} }" x:Name="ShipperContact_column" HorizontalOptions="FillAndExpand" Grid.Row="108" Grid.Column="1" />
+	  
+        <Label Text="ShipperContactSalutation:" Grid.Row="109" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperContactSalutation, Converter={StaticResource nullConverter} }" x:Name="ShipperContactSalutation_column" HorizontalOptions="FillAndExpand" Grid.Row="109" Grid.Column="1" />
+	  
+        <Label Text="ShipperContactTitle:" Grid.Row="110" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperContactTitle, Converter={StaticResource nullConverter} }" x:Name="ShipperContactTitle_column" HorizontalOptions="FillAndExpand" Grid.Row="110" Grid.Column="1" />
+	  
+        <Label Text="ShipperCountryCode:" Grid.Row="111" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperCountryCode, Converter={StaticResource nullConverter} }" x:Name="ShipperCountryCode_column" HorizontalOptions="FillAndExpand" Grid.Row="111" Grid.Column="1" />
+	  
+        <Label Text="ShipperCountryName:" Grid.Row="112" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperCountryName, Converter={StaticResource nullConverter} }" x:Name="ShipperCountryName_column" HorizontalOptions="FillAndExpand" Grid.Row="112" Grid.Column="1" />
+	  
+        <Label Text="ShipperEmail:" Grid.Row="113" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperEmail, Converter={StaticResource nullConverter} }" x:Name="ShipperEmail_column" HorizontalOptions="FillAndExpand" Grid.Row="113" Grid.Column="1" />
+	  
+        <Label Text="ShipperFax:" Grid.Row="114" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperFax, Converter={StaticResource nullConverter} }" x:Name="ShipperFax_column" HorizontalOptions="FillAndExpand" Grid.Row="114" Grid.Column="1" />
+	  
+        <Label Text="ShipperMobile:" Grid.Row="115" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperMobile, Converter={StaticResource nullConverter} }" x:Name="ShipperMobile_column" HorizontalOptions="FillAndExpand" Grid.Row="115" Grid.Column="1" />
+	  
+        <Label Text="ShipperPhone:" Grid.Row="116" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperPhone, Converter={StaticResource nullConverter} }" x:Name="ShipperPhone_column" HorizontalOptions="FillAndExpand" Grid.Row="116" Grid.Column="1" />
+	  
+        <Label Text="ShipperPostalCode:" Grid.Row="117" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperPostalCode, Converter={StaticResource nullConverter} }" x:Name="ShipperPostalCode_column" HorizontalOptions="FillAndExpand" Grid.Row="117" Grid.Column="1" />
+	  
+        <Label Text="ShipperStateProvince:" Grid.Row="118" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperStateProvince, Converter={StaticResource nullConverter} }" x:Name="ShipperStateProvince_column" HorizontalOptions="FillAndExpand" Grid.Row="118" Grid.Column="1" />
+	  
+        <Label Text="ShipperWebsite:" Grid.Row="119" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperWebsite, Converter={StaticResource nullConverter} }" x:Name="ShipperWebsite_column" HorizontalOptions="FillAndExpand" Grid.Row="119" Grid.Column="1" />
+	  
+        <Label Text="StationCode:" Grid.Row="120" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding StationCode, Converter={StaticResource nullConverter} }" x:Name="StationCode_column" HorizontalOptions="FillAndExpand" Grid.Row="120" Grid.Column="1" />
+	  
+        <Label Text="StationName:" Grid.Row="121" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding StationName, Converter={StaticResource nullConverter} }" x:Name="StationName_column" HorizontalOptions="FillAndExpand" Grid.Row="121" Grid.Column="1" />
+	  
+        <Label Text="UpdateUserId:" Grid.Row="122" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding UpdateUserId, Converter={StaticResource nullConverter} }" x:Name="UpdateUserId_column" HorizontalOptions="FillAndExpand" Grid.Row="122" Grid.Column="1" />
+	  
+        <Label Text="UpdateUserName:" Grid.Row="123" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding UpdateUserName, Converter={StaticResource nullConverter} }" x:Name="UpdateUserName_column" HorizontalOptions="FillAndExpand" Grid.Row="123" Grid.Column="1" />
+	  
+        <Label Text="ConsigneeCountry:" Grid.Row="124" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ConsigneeCountry, Converter={StaticResource nullConverter} }" x:Name="ConsigneeCountry_column" HorizontalOptions="FillAndExpand" Grid.Row="124" Grid.Column="1" />
+	  
+        <Label Text="LeadCountry:" Grid.Row="125" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadCountry, Converter={StaticResource nullConverter} }" x:Name="LeadCountry_column" HorizontalOptions="FillAndExpand" Grid.Row="125" Grid.Column="1" />
+	  
+        <Label Text="LeadSalutation:" Grid.Row="126" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadSalutation, Converter={StaticResource nullConverter} }" x:Name="LeadSalutation_column" HorizontalOptions="FillAndExpand" Grid.Row="126" Grid.Column="1" />
+	  
+        <Label Text="LeadState:" Grid.Row="127" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadState, Converter={StaticResource nullConverter} }" x:Name="LeadState_column" HorizontalOptions="FillAndExpand" Grid.Row="127" Grid.Column="1" />
+	  
+        <Label Text="LeadZipCode:" Grid.Row="128" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LeadZipCode, Converter={StaticResource nullConverter} }" x:Name="LeadZipCode_column" HorizontalOptions="FillAndExpand" Grid.Row="128" Grid.Column="1" />
+	  
+        <Label Text="OtherCountry:" Grid.Row="129" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding OtherCountry, Converter={StaticResource nullConverter} }" x:Name="OtherCountry_column" HorizontalOptions="FillAndExpand" Grid.Row="129" Grid.Column="1" />
+	  
+        <Label Text="ShipperCountry:" Grid.Row="130" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ShipperCountry, Converter={StaticResource nullConverter} }" x:Name="ShipperCountry_column" HorizontalOptions="FillAndExpand" Grid.Row="130" Grid.Column="1" />
+	  
+        <Label Text="Title:" Grid.Row="131" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Title, Converter={StaticResource nullConverter} }" x:Name="Title_column" HorizontalOptions="FillAndExpand" Grid.Row="131" Grid.Column="1" />
+
+    </Grid>
+  </ScrollView>
+</ContentPage>

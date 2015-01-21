@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:ffmobile.xaml;assembly=ffmobile"
+					   x:Class="ffmobile.xaml.tblInvoicesDetailPage"
+             Padding="20"
+			 Title="tblInvoices Item">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <c:NullableConverter x:Key="nullConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+	  
+        <Label Text="InvoiceId:" Grid.Row="0" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding InvoiceId, Converter={StaticResource nullConverter} }" x:Name="InvoiceId_column" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" />
+	  
+        <Label Text="SubscriberId:" Grid.Row="1" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding SubscriberId, Converter={StaticResource nullConverter} }" x:Name="SubscriberId_column" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" />
+	  
+        <Label Text="AddressBlock:" Grid.Row="2" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding AddressBlock, Converter={StaticResource nullConverter} }" x:Name="AddressBlock_column" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1" />
+	  
+        <Label Text="ContactName:" Grid.Row="3" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding ContactName, Converter={StaticResource nullConverter} }" x:Name="ContactName_column" HorizontalOptions="FillAndExpand" Grid.Row="3" Grid.Column="1" />
+	  
+        <Label Text="CreatedById:" Grid.Row="4" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding CreatedById, Converter={StaticResource nullConverter} }" x:Name="CreatedById_column" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.Column="1" />
+	  
+        <Label Text="CreatedDate:" Grid.Row="5" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CreatedDate, Converter={StaticResource nullConverter} }" x:Name="CreatedDate_column" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="1" />
+	  
+        <Label Text="CreatedUserName:" Grid.Row="6" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CreatedUserName, Converter={StaticResource nullConverter} }" x:Name="CreatedUserName_column" HorizontalOptions="FillAndExpand" Grid.Row="6" Grid.Column="1" />
+	  
+        <Label Text="CurrencyCode:" Grid.Row="7" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CurrencyCode, Converter={StaticResource nullConverter} }" x:Name="CurrencyCode_column" HorizontalOptions="FillAndExpand" Grid.Row="7" Grid.Column="1" />
+	  
+        <Label Text="CurrencySymbol:" Grid.Row="8" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding CurrencySymbol, Converter={StaticResource nullConverter} }" x:Name="CurrencySymbol_column" HorizontalOptions="FillAndExpand" Grid.Row="8" Grid.Column="1" />
+	  
+        <Label Text="DateDeleted:" Grid.Row="9" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding DateDeleted, Converter={StaticResource nullConverter} }" x:Name="DateDeleted_column" HorizontalOptions="FillAndExpand" Grid.Row="9" Grid.Column="1" />
+	  
+        <Label Text="Deleted:" Grid.Row="10" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Switch IsToggled="{Binding Deleted, Converter={StaticResource nullConverter} }" x:Name="Deleted_column" HorizontalOptions="EndAndExpand" Grid.Row="10" Grid.Column="1" />
+	  
+        <Label Text="DeletedById:" Grid.Row="11" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding DeletedById, Converter={StaticResource nullConverter} }" x:Name="DeletedById_column" HorizontalOptions="FillAndExpand" Grid.Row="11" Grid.Column="1" />
+	  
+        <Label Text="InvoiceAmount:" Grid.Row="12" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding InvoiceAmount, Converter={StaticResource nullConverter} }" x:Name="InvoiceAmount_column" HorizontalOptions="FillAndExpand" Grid.Row="12" Grid.Column="1" />
+	  
+        <Label Text="InvoiceDate:" Grid.Row="13" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding InvoiceDate, Converter={StaticResource nullConverter} }" x:Name="InvoiceDate_column" HorizontalOptions="FillAndExpand" Grid.Row="13" Grid.Column="1" />
+	  
+        <Label Text="InvoiceNumber:" Grid.Row="14" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding InvoiceNumber, Converter={StaticResource nullConverter} }" x:Name="InvoiceNumber_column" HorizontalOptions="FillAndExpand" Grid.Row="14" Grid.Column="1" />
+	  
+        <Label Text="InvoiceText:" Grid.Row="15" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding InvoiceText, Converter={StaticResource nullConverter} }" x:Name="InvoiceText_column" HorizontalOptions="FillAndExpand" Grid.Row="15" Grid.Column="1" />
+	  
+        <Label Text="LastUpdate:" Grid.Row="16" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding LastUpdate, Converter={StaticResource nullConverter} }" x:Name="LastUpdate_column" HorizontalOptions="FillAndExpand" Grid.Row="16" Grid.Column="1" />
+	  
+        <Label Text="MonthlyUserFee:" Grid.Row="17" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding MonthlyUserFee, Converter={StaticResource nullConverter} }" x:Name="MonthlyUserFee_column" HorizontalOptions="FillAndExpand" Grid.Row="17" Grid.Column="1" />
+	  
+        <Label Text="Paid:" Grid.Row="18" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Switch IsToggled="{Binding Paid, Converter={StaticResource nullConverter} }" x:Name="Paid_column" HorizontalOptions="EndAndExpand" Grid.Row="18" Grid.Column="1" />
+	  
+        <Label Text="PaidDate:" Grid.Row="19" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding PaidDate, Converter={StaticResource nullConverter} }" x:Name="PaidDate_column" HorizontalOptions="FillAndExpand" Grid.Row="19" Grid.Column="1" />
+	  
+        <Label Text="Phone:" Grid.Row="20" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding Phone, Converter={StaticResource nullConverter} }" x:Name="Phone_column" HorizontalOptions="FillAndExpand" Grid.Row="20" Grid.Column="1" />
+	  
+        <Label Text="UpdateUserId:" Grid.Row="21" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Numeric" Text="{Binding UpdateUserId, Converter={StaticResource nullConverter} }" x:Name="UpdateUserId_column" HorizontalOptions="FillAndExpand" Grid.Row="21" Grid.Column="1" />
+	  
+        <Label Text="UpdateUserName:" Grid.Row="22" Grid.Column="0" XAlign="End" YAlign="Center"/>
+        <Entry Keyboard="Default" Text="{Binding UpdateUserName, Converter={StaticResource nullConverter} }" x:Name="UpdateUserName_column" HorizontalOptions="FillAndExpand" Grid.Row="22" Grid.Column="1" />
+
+    </Grid>
+  </ScrollView>
+</ContentPage>

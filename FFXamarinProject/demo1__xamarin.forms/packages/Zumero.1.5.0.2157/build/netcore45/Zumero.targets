@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Automatically generated-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="check_cpu_d36fe76d-661d-4fa4-895b-d831468a5226" BeforeTargets="ResolveAssemblyReferences" Condition=" ( ($(Platform.ToLower()) != 'arm') AND ($(Platform.ToLower()) != 'x64') AND ($(Platform.ToLower()) != 'x86') ) ">
+    <Error Text="$(Platform) is not supported. The Platform configuration must be arm or x64 or x86" />
+  </Target>
+  <Target Name="InjectReference_a77d5d37-4b39-4c57-b812-e3aa3e344932" BeforeTargets="ResolveAssemblyReferences">
+    <!--platform.winrt80.cppinterop.arm-->
+    <ItemGroup Condition=" '$(Platform.ToLower())' == 'arm' ">
+      <Reference Include="Zumero">
+        <HintPath>$(MSBuildThisFileDirectory)cppinterop\arm\Zumero.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <!--platform.winrt80.cppinterop.x64-->
+    <ItemGroup Condition=" '$(Platform.ToLower())' == 'x64' ">
+      <Reference Include="Zumero">
+        <HintPath>$(MSBuildThisFileDirectory)cppinterop\x64\Zumero.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <!--platform.winrt80.cppinterop.x86-->
+    <ItemGroup Condition=" '$(Platform.ToLower())' == 'x86' ">
+      <Reference Include="Zumero">
+        <HintPath>$(MSBuildThisFileDirectory)cppinterop\x86\Zumero.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+  </Target>
+</Project>

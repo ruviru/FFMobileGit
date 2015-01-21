@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Automatically generated-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="check_cpu_23598e98-88ce-4ff4-9a45-5bd3325d7855" BeforeTargets="ResolveAssemblyReferences" Condition=" ( ($(Platform.ToLower()) != 'arm') AND ($(Platform.ToLower()) != 'x86') ) ">
+    <Error Text="$(Platform) is not supported. The Platform configuration must be arm or x86" />
+  </Target>
+  <Target Name="InjectReference_79d56e7a-c4e7-4f23-81fb-8c5358e662f7" BeforeTargets="ResolveAssemblyReferences">
+    <!--platform.wp80.cppinterop.arm-->
+    <ItemGroup Condition=" '$(Platform.ToLower())' == 'arm' ">
+      <Reference Include="Zumero">
+        <HintPath>$(MSBuildThisFileDirectory)cppinterop\arm\Zumero.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <!--platform.wp80.cppinterop.x86-->
+    <ItemGroup Condition=" '$(Platform.ToLower())' == 'x86' ">
+      <Reference Include="Zumero">
+        <HintPath>$(MSBuildThisFileDirectory)cppinterop\x86\Zumero.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+  </Target>
+</Project>
