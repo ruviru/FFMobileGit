@@ -52,7 +52,7 @@ namespace ffmobile.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Forms.Init();
-
+			Zumero.DataGridComponent.Init ();
 
             var sqliteFilename = "data.db3";
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder

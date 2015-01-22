@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:c="clr-namespace:ffmobile.xaml;assembly=ffmobile"
+	xmlns:z="clr-namespace:Zumero;assembly=Zumero.DataGrid"
+	x:Class="ffmobile.ContactsGrid">
+	<ContentPage.Content>
+		<StackLayout Spacing="10">
+		    <z:DataGrid x:Name="dataGrid">
+		    	<z:DataGrid.Columns>
+		    		<z:Column>
+                        <z:Column.Template>
+                            <DataTemplate>
+                                <Label Text="{Binding ContactName}" />
+                            </DataTemplate>
+                        </z:Column.Template>
+                    </z:Column>
+		    	</z:DataGrid.Columns>    
+		   	</z:DataGrid>
+	  	</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -24,6 +24,8 @@ System.Reflection.Extensions.dll
 System.Diagnostics.Debug.dll
 System.Net.Http.dll
 System.Runtime.Serialization.dll
+Zumero.DataGrid.iOS.dll
+Zumero.DataGrid.dll
 ffmobile.dll
 SQLite-net.dll
 SQLitePCL.raw.dll

@@ -89,6 +89,10 @@
     <Compile Include="xaml\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="xaml\ContactsGrid.xaml.cs">
+      <DependentUpon>ContactsGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contact.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net">
@@ -106,6 +110,9 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.1.3.1.6296\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Zumero.DataGrid">
+      <HintPath>..\Components\ZumeroDataGrid-1.0.3-trial\lib\pcl\Zumero.DataGrid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -113,6 +120,9 @@
   <ItemGroup>
     <EmbeddedResource Include="xaml\WelcomePage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xaml\ContactsGrid.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
