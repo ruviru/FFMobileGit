@@ -72,7 +72,8 @@ namespace ffmobile.xaml
 				Page target = null;
 				if (((string)args.Item) == "tblInvoices") target = new tblInvoicesPage();
 				if (((string)args.Item) == "tblAccounts") target = new tblAccountsPage();
-				if (((string)args.Item) == "tblLeads") target = new tblLeadsPage();
+				if (((string)args.Item) == "tblLeads") target = 
+					new LeadsGrid (); //new tblLeadsPage();
 				if (((string)args.Item) == "tblOpportunities") target = new tblOpportunitiesPage();
 				if (((string)args.Item) == "tblContacts")
 					target = new ContactsGrid (); //new tblContactsPage();

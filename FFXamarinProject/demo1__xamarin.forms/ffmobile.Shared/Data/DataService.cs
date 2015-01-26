@@ -11,7 +11,8 @@ namespace ffmobile.Data
 {
     interface IDataService
     {
-        IList<T> LoadAll<T>() where T : new();
+		IList<T> LoadAll<T>() where T : new();
+        T[] LoadAllArray<T>() where T : new();
         void Update(object item);
         void Insert(object item);
 		bool HasNeverBeenSynced();
@@ -91,6 +92,22 @@ namespace ffmobile.Data
 			catch (Exception)
 			{
 				return true;
+			}
+		}
+
+		public T[] LoadAllArray<T>() where T : new()
+		{
+			this.StartReadTransaction();
+			try
+			{
+				T[] results = _connection.Table<T>().ToArray();
+				this.Commit();
+				return results;
+			}
+			catch (Exception)
+			{
+				this.Rollback();
+				throw;
 			}
 		}
 

@@ -1,6 +1,7 @@
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.WelcomePage.xaml
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.ContactsGrid.xaml
+/Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.LeadsGrid.xaml
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.SyncPage.xaml
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.TablesPage.xaml
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.tblInvoicesPage.xaml
@@ -15,6 +16,7 @@
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ffmobile.xaml.tblContactsDetailPage.xaml
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/WelcomePage.xaml.g.cs
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/ContactsGrid.xaml.g.cs
+/Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/LeadsGrid.xaml.g.cs
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/SyncPage.xaml.g.cs
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/TablesPage.xaml.g.cs
 /Users/chathum/Documents/FFMobileGit/FFXamarinProject/demo1__xamarin.forms/ffmobile.Shared/obj/Debug/tblInvoicesPage.xaml.g.cs

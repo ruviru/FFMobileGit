@@ -17,16 +17,29 @@ namespace ffmobile
 		}
 
 
-		//bool alreadyRedirectedOnce = false;
-		protected override void OnAppearing()
+		bool alreadyRedirectedOnce = false;
+		protected override async void OnAppearing()
 		{
 			base.OnAppearing();
-			this.FindByName<DataGrid> ("dataGrid").Rows = Contact.GetDataList ();
-			/*try
+			//dataGrid.Rows = Contact.GetDataList ();
+			/*
+			var list = new Models.tblContacts[] {
+					new Models.tblContacts { ContactName = "test1", ContactType = "type1" },
+					new Models.tblContacts { ContactName = "test2", ContactType = "type2" }
+			};
+
+			var listCnt = new List<Models.tblContacts> ();
+			listCnt.Add (new Models.tblContacts { ContactName = "test1", ContactType = "type1" });
+			listCnt.Add (new Models.tblContacts { ContactName = "test1222", ContactType = "type1222" });
+
+			dataGrid.Rows = list;
+			*/
+			try
 			{
-				this.FindByName<DataGrid>("dataGrid").Rows = await Task<IList<Models.tblContacts>>.Run(() =>
+				//dataGrid.Rows = list;
+				dataGrid.Rows = await Task<Models.tblContacts[]>.Run(() =>
 					{
-						return (IList<object>) DependencyService.Get<IDataService>().LoadAll<Models.tblContacts>();
+						return DependencyService.Get<IDataService>().LoadAllArray<Models.tblContacts>();
 					});
 			}
 			catch (Exception e)
@@ -42,8 +55,7 @@ namespace ffmobile
 				}
 				else
 					this.DisplayAlert("Exception", e.Message, "Ok");
-			}*/
-
+			}
 		}
 	}
 }
